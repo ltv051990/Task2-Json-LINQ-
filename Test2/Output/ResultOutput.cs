@@ -29,7 +29,7 @@ namespace MyOutput
             {
                 foreach (var t in dictionary)
                 {
-                    Console.Write("| Value -> {0} repeat {1} |", t.Key.ToString(), t.Key.ToString());
+                    Console.Write("| Value -> {0} repeat {1} |", t.Key.ToString(), t.Value.ToString());
                 }
                 Console.WriteLine();
             }
@@ -38,7 +38,7 @@ namespace MyOutput
 
         public static void Print(int sum, string output)
         {
-            Console.WriteLine("{0}{1}Sum = {2}", output, Environment.NewLine, sum);
+            Console.WriteLine("{1}{0}{1}Sum = {2}", output, Environment.NewLine, sum);
         }
     }
 }
